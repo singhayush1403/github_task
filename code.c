@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main()
 {
+    //this is a simple meaningless edit done by mayank jain to bring a simple change in the file.
     int number, i;
 
     printf("Enter a positive integer: ");
