@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main()
 {
-    //this is a simple meaningless edit done by mayank jain to bring a simple change in the file.
     int number, i;
 
     printf("Enter a positive integer: ");
@@ -10,14 +9,19 @@ int main()
     if (number>0) 
     {
     
-        printf("Factors of %d are: ", number);
-        for(i=1; i <= number; ++i)
+            printf("Factors of %d are:", number);
+            printf("1 ");
+    for(i=2; i <= number/2; ++i)
+    {
+        if (number%i == 0)
         {
-            if (number%i == 0)
-            {
-                printf("%d ",i);
-            }
+
+            printf("%d ",i);
+
         }
+
+    }
+    printf("%d \n",number);
     }
 
     else if(number<=0)
