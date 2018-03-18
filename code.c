@@ -5,7 +5,7 @@ int main()
    // shaily bhatt added a do while loop to the program so that the user can run at it as long as he wants to.
    //
  
-    int number, i, res;
+    int number, i, res =0;
     do {
     printf("Enter a positive integer: ");
     scanf("%d",&number);
@@ -13,14 +13,19 @@ int main()
     if (number>0) 
     {
     
-        printf("Factors of %d are: ", number);
-        for(i=1; i <= number; ++i)
+            printf("Factors of %d are:", number);
+            printf("1 ");
+    for(i=2; i <= number/2; ++i)
+    {
+        if (number%i == 0)
         {
-            if (number%i == 0)
-            {
-                printf("%d ",i);
-            }
+
+            printf("%d ",i);
+
         }
+
+    }
+    printf("%d \n",number);
     }
 
     else if(number<=0)
