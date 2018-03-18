@@ -2,8 +2,11 @@
 int main()
 {
     //this is a simple meaningless edit done by mayank jain to bring a simple change in the file.
-    int number, i;
-
+   // shaily bhatt added a do while loop to the program so that the user can run at it as long as he wants to.
+   //
+ 
+    int number, i, res;
+    do {
     printf("Enter a positive integer: ");
     scanf("%d",&number);
 
@@ -24,6 +27,8 @@ int main()
     {
         printf("%d is not a valid number ", number);
     }
-
+    printf( " wish to continue ? press - 1 to continue, 0 to exit : " );
+    scanf("%d", &res);
+    } while ( res == 1);
     return 0;
 }
